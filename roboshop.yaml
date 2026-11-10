@@ -16,9 +16,9 @@
        - roboshop-common
        - "roboshop-{{ item }}"
        region: us-east-1
-    loop: "{{ instances }}"
+    loop:"{{ instances }}"
     when: action == "create"
-    register:  "{{ ec2_output }}"
+    register:  ec2_output
 
   # - name: print ec2 creation output
   #   debug:
