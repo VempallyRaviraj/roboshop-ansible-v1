@@ -16,8 +16,8 @@
        - roboshop-common
        - "roboshop-{{ item }}"
        region: us-east-1
-    loop:"{{ instances }}"
-    when:action == "create"
+    loop: "{{ instances }}"
+    when: action == "create"
     register: ec2_output
 
   # - name: print ec2 creation output
@@ -32,7 +32,7 @@
     record: "{{ item.item }}.{{ domain_name }}" # mongodb.joindevsecops.shop
     type: A
     ttl: 1
-    value: "{{ item.instances[0].private_ip_address e}}
+    value: "{{ item.instances[0].private_ip_address }}
     overwrite: true
-  loop:"{{ ec2_output.results }}"
+  loop: "{{ ec2_output.results }}"
   when: action == "create"
