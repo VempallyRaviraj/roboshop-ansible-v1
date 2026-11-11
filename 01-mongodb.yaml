@@ -7,6 +7,6 @@
       src: mongo.repo
       dest: /etc/yum.repos.d/mongo.repo
 
-  - nmae: test the inventory variable
+  - name: test the inventory variable
     debug:
       msg: "{{ app_name }}"
