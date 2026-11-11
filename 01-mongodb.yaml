@@ -1,0 +1,4 @@
+- name: configure mongodb server
+  hosts: mongodb
+  become: true
+  - name: 
