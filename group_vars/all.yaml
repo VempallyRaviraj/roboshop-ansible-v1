@@ -2,3 +2,10 @@ ansible_user: ec2-user
 ansible_password: DevOps321
 mongodb_host: mongodb.joindevsecops.shop
 redis_host: redis.joindevsecops.shop
+mysql__host: mysql.joindevsecops.shop
+rabbitmq_host: rabbitmq.joindevsecops.shop
+catalogue_host: catalogue.joindevsecops.shop
+user_host: user.joindevsecops.shop
+cart_host: cart.joindevsecops.shop
+shipping_host: shipping.joindevsecops.shop
+payment_host: payment.joindevsecops.shop
